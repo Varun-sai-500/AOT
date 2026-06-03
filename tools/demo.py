@@ -82,8 +82,9 @@ color_palette = np.array(_palette).reshape(-1, 3)
 def get_device(gpu_id: int) -> torch.device:
     if torch.cuda.is_available():
         return torch.device(f'cuda:{gpu_id}')
-    if torch.backends.mps.is_available() and torch.backends.mps.is_built():
-        return torch.device("mps")
+    if hasattr(torch.backends, "mps"):
+        if torch.backends.mps.is_available() and torch.backends.mps.is_built():
+            return torch.device("mps")
     return torch.device('cpu')
 
 
@@ -134,17 +135,11 @@ def place_and_validate_mask(mask_path, images_dir, masks_dir):
         mask_img = mask_img.resize(first_img.size, Image.NEAREST)
 
     mask_np = np.array(mask_img)
+    if mask_np.ndim != 2:
+        raise ValueError(
+            f"Expected indexed PNG mask, got shape {mask_np.shape}"
+        )
 
-    # ── FIX 1: convert RGB → single channel ──
-    if mask_np.ndim == 3:
-        mask_np = mask_np[:, :, 0]
-
-    # ── FIX 2: normalize values to {0,1} ──
-    # (important if mask is 0/255)
-    if mask_np.max() > 1:
-        mask_np = (mask_np > 0).astype(np.uint8)
-
-    # ── FIX 3: ensure uint8 indexed mask ──
     mask_np = mask_np.astype(np.uint8)
 
     # convert to palette mode (important!)
