@@ -7,8 +7,9 @@ def generate_permute_matrix(dim, num, keep_first=True, device=None, gpu_id=None)
             device = torch.device(f"cuda:{gpu_id}")
         elif torch.cuda.is_available():
             device = torch.device("cuda")
-        elif torch.backends.mps.is_available() and torch.backends.mps.is_built():
-            device = torch.device("mps")
+        elif hasattr(torch.backends, "mps"):
+            if torch.backends.mps.is_available() and torch.backends.mps.is_built():
+                device = torch.device("mps")
         else:
             device = torch.device("cpu")
 
