@@ -5,10 +5,9 @@ import numbers
 import numpy as np
 from PIL import Image, ImageFilter
 from collections.abc import Sequence
-try:
-    Resampling = Image.Resampling
-except AttributeError:
-    Resampling = Image
+
+Resampling = Image.Resampling
+
 import torch
 import torchvision.transforms.functional as TF
 

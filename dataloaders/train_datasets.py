@@ -1,14 +1,12 @@
-from __future__ import division
 import os
 from glob import glob
 import json
 import random
 import cv2
 from PIL import Image
-try:
-    BICUBIC = Image.Resampling.BICUBIC
-except AttributeError:
-    BICUBIC = Image.BICUBIC
+
+BICUBIC = Image.Resampling.BICUBIC
+
 
 import numpy as np
 import torch
