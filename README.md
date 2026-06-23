@@ -73,13 +73,13 @@ Optional:
 
 ## Installation
 
-pip install .
+`pip install .`
 
 For development:
-pip install -e .
+`pip install -e .`
 
 Optional demo dependencies:
-pip install .[demo]
+`pip install .[demo]`
 
 ## Model Zoo and Results
 Pre-trained models, benckmark scores, and pre-computed results reproduced by this project can be found in [MODEL_ZOO.md](MODEL_ZOO.md).
