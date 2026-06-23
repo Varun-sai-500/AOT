@@ -56,8 +56,8 @@ General examples (Messi and Kobe):
 - **Test-time augmentation:** multi-scale and flipping augmentations are supported.
 
 ## Requirements
-   * Python3
-   * pytorch
+   * Python >= 3.10
+   * pytorch >= 2.9.0
    * torchvision >= 0.24.0
    * opencv-python
    * Pillow >= 11.0.0
