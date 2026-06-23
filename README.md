@@ -56,10 +56,11 @@ General examples (Messi and Kobe):
 - **Test-time augmentation:** multi-scale and flipping augmentations are supported.
 
 ## Requirements
-   * Python3
-   * pytorch >= 1.7.0 and torchvision
+   * Python >= 3.10
+   * pytorch >= 1.7.0
+   * torchvision >= 0.24.0
    * opencv-python
-   * Pillow
+   * Pillow >= 11.0.0
    * Pytorch Correlation. Recommend to install from [source](https://github.com/ClementPinard/Pytorch-Correlation-extension):
      ```bash
      git clone https://github.com/ClementPinard/Pytorch-Correlation-extension.git
