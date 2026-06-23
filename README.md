@@ -57,10 +57,10 @@ General examples (Messi and Kobe):
 
 ## Requirements
    * Python3
-   * pytorch 
-   * torchvision
+   * pytorch
+   * torchvision >= 0.24.0
    * opencv-python
-   * Pillow
+   * Pillow >= 11.0.0
    * Pytorch Correlation. Recommend to install from [source](https://github.com/ClementPinard/Pytorch-Correlation-extension):
      ```bash
      git clone https://github.com/ClementPinard/Pytorch-Correlation-extension.git
