@@ -1,4 +1,11 @@
 # AOT Series Frameworks in PyTorch
+<p>
+  <img src="https://img.shields.io/badge/NeurIPS-2021-7B68EE"/>
+  <img src="https://img.shields.io/badge/NeurIPS-2022%20Spotlight%20%E2%AD%90-FFB347"/>
+  <img src="https://img.shields.io/badge/IJCAI-2023-3CB371"/>
+  <img src="https://img.shields.io/badge/IEEE%20TPAMI-2024-E07B54"/>
+  <img src="https://img.shields.io/badge/%F0%9F%8F%86%20Challenge%20Wins-6-gold"/>
+</p>
 
 <p>
   <a href="https://paperswithcode.com/sota/semi-supervised-video-object-segmentation-on-15?p=decoupling-features-in-hierarchical">
@@ -21,13 +28,7 @@
   </a>
 </p>
 
-<p>
-  <img src="https://img.shields.io/badge/NeurIPS-2021-7B68EE"/>
-  <img src="https://img.shields.io/badge/NeurIPS-2022%20Spotlight%20%E2%AD%90-FFB347"/>
-  <img src="https://img.shields.io/badge/IJCAI-2023-3CB371"/>
-  <img src="https://img.shields.io/badge/IEEE%20TPAMI-2024-E07B54"/>
-  <img src="https://img.shields.io/badge/%F0%9F%8F%86%20Challenge%20Wins-6-gold"/>
-</p>
+
 
 ## News
 - `2024/03`: **AOST** - [AOST](https://arxiv.org/abs/2203.11442), the journal extension of AOT, has been accepted by **IEEE TPAMI 2024** — the field's highest-impact journal. AOST is the first scalable VOS framework supporting run-time speed-accuracy trade-offs, from real-time efficiency to SOTA performance.
@@ -36,6 +37,37 @@
 - `2023/06`: **WINNER** - DeAOT-based Tracker ranked **1st** in **two tracks** of the [**EPIC-Kitchens**](https://epic-kitchens.github.io/2023) challenges at **CVPR 2023** ([leaderboard](http://epic-kitchens.github.io/2023)). MS-DeAOT wins Semi-Supervised Video Object Segmentation (segmentation-based tracking) [[Report](https://arxiv.org/pdf/2307.02010)] and TREK-150 Object Tracking (BBox-based tracking) [[Report](https://arxiv.org/pdf/2307.02508)].
 - `2023/04`: **SAM-Track** - [Segment and Track Anything (SAM-Track)](https://github.com/z-x-yang/Segment-and-Track-Anything) merges [SAM](https://github.com/facebookresearch/segment-anything) with [DeAOT](https://github.com/yoxu515/aot-benchmark) for zero-shot segmentation and tracking of any object in video.
 - `2022/10`: **WINNER** - AOT-based Tracker ranked **1st** in **four tracks** of the **VOT 2022** challenge at **ECCV 2022** ([presentation of results](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf)). MS-AOT wins VOT-STs2022 (short-term segmentation) and VOT-RTs2022 (real-time segmentation). Additionally, the bbox outputs of MS-AOT surpass the dedicated winners of both bbox tracks VOT-STb2022 and VOT-RTb2022 — highlighted in the [workshop presentation](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf).
+
+## Impact
+
+> **830+ citations** across the AOT series (verified via Google Scholar).
+
+AOT/DeAOT has been adopted as core tracking infrastructure in published robotics research from **MIT CSAIL** and **Harvard SEAS**:
+
+| Project | Institutions | Venue | Details |
+|---------|-------------|-------|---------|
+| [Follow Anything (FAn)](https://arxiv.org/pdf/2308.05737) | MIT CSAIL · Harvard SEAS · Project CETI | IEEE RA-L | Open-vocabulary real-time drone tracking system using DeAOT as the video object tracking backbone, deployed on a physical micro aerial vehicle (MAV). Authors include Daniela Rus (MIT CSAIL Director) and Robert J. Wood (Harvard SEAS). |
+
+FAn uses DeAOT to track and follow arbitrary objects specified by text, image, or click — deployed in a live control loop on a drone at 6–20 fps on a commodity laptop GPU. This is not a benchmark citation; it is production use in a real robotic system.
+
+---
+
+## Competition Record
+
+Six first-place finishes across three major venues:
+
+| Year | Challenge | Track | Venue | Model | Report |
+|------|-----------|-------|-------|-------|--------|
+| 2023 | VOTS 2023 | Overall | ICCV 2023 | DMAOT | [Leaderboard](https://eu.aihub.ml/competitions/201#results) · [Submission](https://eu.aihub.ml/my/competition/submission/1139/detailed_results/) |
+| 2023 | EPIC-Kitchens | Semi-Supervised VOS (segmentation-based tracking) | CVPR 2023 | MS-DeAOT | [Report](https://arxiv.org/pdf/2307.02010) |
+| 2023 | EPIC-Kitchens | TREK-150 Object Tracking (BBox-based) | CVPR 2023 | MS-DeAOT | [Report](https://arxiv.org/pdf/2307.02508) |
+| 2022 | VOT 2022 | Short-term segmentation (VOT-STs2022) | ECCV 2022 | MS-AOT | [Report](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf) |
+| 2022 | VOT 2022 | Real-time segmentation (VOT-RTs2022) | ECCV 2022 | MS-AOT | [Report](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf) |
+| 2022 | VOT 2022 | BBox tracks (STb + RTb) — surpassed dedicated bbox winners† | ECCV 2022 | MS-AOT + [AlphaRefine](https://github.com/MasterBin-IIAU/AlphaRefine) | [Report](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf) |
+
+> †Bbox results were submitted after the competition deadline at the organizers' request and were highlighted in the official ECCV 2022 workshop presentation.
+
+---
 
 ## Papers
 
