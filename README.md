@@ -21,23 +21,44 @@
   </a>
 </p>
 
+<p>
+  <img src="https://img.shields.io/badge/NeurIPS-2021-7B68EE"/>
+  <img src="https://img.shields.io/badge/NeurIPS-2022%20Spotlight%20%E2%AD%90-FFB347"/>
+  <img src="https://img.shields.io/badge/IJCAI-2023-3CB371"/>
+  <img src="https://img.shields.io/badge/IEEE%20TPAMI-2024-E07B54"/>
+  <img src="https://img.shields.io/badge/%F0%9F%8F%86%20Challenge%20Wins-6-gold"/>
+</p>
+
 ## News
-- `2024/03`: **AOST** - [AOST](https://arxiv.org/abs/2203.11442), the journal extension of AOT, has been accepted by TPAMI. AOST is the first scalable VOS framework supporting run-time speed-accuracy trade-offs, from real-time efficiency to SOTA performance.
-- `2023/07`: **Pyramid/Panoptic AOT** - The code of PAOT has been released in [paot](https://github.com/yoxu515/aot-benchmark/tree/paot) branch of this repository. We propose a benchmark [**VIPOSeg**](https://github.com/yoxu515/VIPOSeg-Benchmark) for panoptic VOS, and PAOT is designed to tackle the challenges in panoptic VOS and achieves SOTA performance. PAOT consists of a multi-scale architecture of LSTT (same as MS-AOT in VOT2022) and panoptic ID banks for thing and stuff. Please refer to the [paper](https://arxiv.org/abs/2305.04470) for more details.
-- `2023/07`: **WINNER** - DeAOT-based Tracker ranked **1st** in the [**VOTS 2023**](https://www.votchallenge.net/vots2023/) challenge ([leaderboard](https://eu.aihub.ml/competitions/201#results)). In detail, our [DMAOT](https://eu.aihub.ml/my/competition/submission/1139/detailed_results/) improves DeAOT by storing object-wise long-term memories instead of frame-wise long-term memories. This avoids the memory growth problem when processing long video sequences and produces better results when handling multiple objects.
-- `2023/06`: **WINNER** - DeAOT-based Tracker ranked **1st** in **two tracks** of [**EPIC-Kitchens**](https://epic-kitchens.github.io/2023) challenges ([leaderboard](http://epic-kitchens.github.io/2023)). In detail, our MS-DeAOT is a multi-scale version of DeAOT and is the winner of Semi-Supervised Video Object Segmentation (segmentation-based tracking) and TREK-150 Object Tracking (BBox-based tracking). Technical reports are coming soon.
-- `2023/04`: **SAM-Track** - We are pleased to announce the release of our latest project, [Segment and Track Anything (SAM-Track)](https://github.com/z-x-yang/Segment-and-Track-Anything). This innovative project merges two kinds of models, [SAM](https://github.com/facebookresearch/segment-anything) and our [DeAOT](https://github.com/yoxu515/aot-benchmark), to achieve seamless segmentation and efficient tracking of any objects in videos.
-- `2022/10`: **WINNER** - AOT-based Tracker ranked **1st** in **four tracks** of the **VOT 2022** challenge ([presentation of results](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf)). In detail, our MS-AOT is the winner of two segmentation tracks, VOT-STs2022 and VOT-RTs2022 (real-time). In addition, the bounding box results of MS-AOT (initialized by [AlphaRef](https://github.com/MasterBin-IIAU/AlphaRefine), and output is bounding box fitted to mask prediction) surpass the winners of two bounding box tracks, VOT-STb2022 and VOT-RTb2022 (real-time). The bounding box results were required by the organizers after the competition deadline but were highlighted in the [workshop presentation](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf) (ECCV 2022).
+- `2024/03`: **AOST** - [AOST](https://arxiv.org/abs/2203.11442), the journal extension of AOT, has been accepted by **IEEE TPAMI 2024** — the field's highest-impact journal. AOST is the first scalable VOS framework supporting run-time speed-accuracy trade-offs, from real-time efficiency to SOTA performance.
+- `2023/07`: **Pyramid/Panoptic AOT** - The code of PAOT has been released in the [paot](https://github.com/yoxu515/aot-benchmark/tree/paot) branch. We propose a benchmark [**VIPOSeg**](https://github.com/yoxu515/VIPOSeg-Benchmark) for panoptic VOS, and PAOT is designed to tackle the challenges in panoptic VOS achieving SOTA performance. PAOT consists of a multi-scale LSTT architecture (same as MS-AOT in VOT2022) and panoptic ID banks for thing and stuff. See the [paper](https://arxiv.org/abs/2305.04470) for details. Published at **IJCAI 2023**.
+- `2023/07`: **WINNER** - DeAOT-based Tracker ranked **1st** in the [**VOTS 2023**](https://www.votchallenge.net/vots2023/) challenge at **ICCV 2023** ([leaderboard](https://eu.aihub.ml/competitions/201#results)). Our [DMAOT](https://eu.aihub.ml/my/competition/submission/1139/detailed_results/) improves DeAOT by storing object-wise long-term memories instead of frame-wise long-term memories, eliminating memory growth in long sequences and improving multi-object handling.
+- `2023/06`: **WINNER** - DeAOT-based Tracker ranked **1st** in **two tracks** of the [**EPIC-Kitchens**](https://epic-kitchens.github.io/2023) challenges at **CVPR 2023** ([leaderboard](http://epic-kitchens.github.io/2023)). MS-DeAOT wins Semi-Supervised Video Object Segmentation (segmentation-based tracking) [[Report](https://arxiv.org/pdf/2307.02010)] and TREK-150 Object Tracking (BBox-based tracking) [[Report](https://arxiv.org/pdf/2307.02508)].
+- `2023/04`: **SAM-Track** - [Segment and Track Anything (SAM-Track)](https://github.com/z-x-yang/Segment-and-Track-Anything) merges [SAM](https://github.com/facebookresearch/segment-anything) with [DeAOT](https://github.com/yoxu515/aot-benchmark) for zero-shot segmentation and tracking of any object in video.
+- `2022/10`: **WINNER** - AOT-based Tracker ranked **1st** in **four tracks** of the **VOT 2022** challenge at **ECCV 2022** ([presentation of results](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf)). MS-AOT wins VOT-STs2022 (short-term segmentation) and VOT-RTs2022 (real-time segmentation). Additionally, the bbox outputs of MS-AOT surpass the dedicated winners of both bbox tracks VOT-STb2022 and VOT-RTb2022 — highlighted in the [workshop presentation](https://data.votchallenge.net/vot2022/vot2022_st_rt.pdf).
+
+## Papers
+
+A four-year research lineage across NeurIPS, IJCAI, and IEEE TPAMI:
+
+| Year | Paper | Venue | Branch |
+|------|-------|-------|--------|
+| 2021 | [**AOT**: Associating Objects with Transformers for Video Object Segmentation](https://arxiv.org/abs/2106.02638) [[OpenReview](https://openreview.net/forum?id=hl3v8io3ZYt)] | NeurIPS 2021 | `main` |
+| 2022 | [**DeAOT**: Decoupling Features in Hierarchical Propagation for VOS](https://arxiv.org/pdf/2210.09782.pdf) [[OpenReview](https://openreview.net/forum?id=DgM7-7eMkq0)] | NeurIPS 2022 **Spotlight** ⭐ | `main` |
+| 2023 | [**PAOT**: Video Object Segmentation in Panoptic Wild Scenes](https://arxiv.org/abs/2305.04470) | IJCAI 2023 | [`paot`](https://github.com/yoxu515/aot-benchmark/tree/paot) |
+| 2024 | [**AOST**: Scalable Video Object Segmentation with Identification Mechanism](https://arxiv.org/abs/2203.11442) | IEEE TPAMI 2024 | [`paot`](https://github.com/yoxu515/aot-benchmark/tree/paot) |
+
+> NeurIPS Spotlight is awarded to the top ~5% of accepted submissions. IEEE TPAMI is the field's highest-impact journal, with a multi-year, multi-round review standard.
 
 ## Intro
-A modular reference PyTorch implementation of AOT series frameworks:
+A modular reference PyTorch implementation of the AOT series frameworks:
 - **DeAOT**: Decoupling Features in Hierarchical Propagation for Video Object Segmentation (NeurIPS 2022, Spotlight) [[OpenReview](https://openreview.net/forum?id=DgM7-7eMkq0)][[PDF](https://arxiv.org/pdf/2210.09782.pdf)]
 <img src="source/overview_deaot.png" width="90%"/>
 
 - **AOT**: Associating Objects with Transformers for Video Object Segmentation (NeurIPS 2021, Score 8/8/7/8) [[OpenReview](https://openreview.net/forum?id=hl3v8io3ZYt)][[PDF](https://arxiv.org/abs/2106.02638)]
 <img src="source/overview.png" width="90%"/>
 
-An extension of AOT, [AOST](https://arxiv.org/abs/2203.11442) (under review), is available now. AOST is a more robust and flexible framework, supporting run-time speed-accuracy trade-offs.
+For the `paot` branch: **PAOT** (IJCAI 2023) and **AOST** (IEEE TPAMI 2024) are available at [paot](https://github.com/yoxu515/aot-benchmark/tree/paot).
 
 ## Examples
 Benchmark examples:
@@ -49,11 +70,11 @@ General examples (Messi and Kobe):
 <img src="source/messi.gif" width="45%"/> <img src="source/kobe.gif" width="45%"/>
 
 ## Highlights
-- **High performance:** up to **85.5%** ([R50-AOTL](MODEL_ZOO.md#youtube-vos-2018-val)) on YouTube-VOS 2018 and **82.1%** ([SwinB-AOTL]((MODEL_ZOO.md#youtube-vos-2018-val))) on DAVIS-2017 Test-dev under standard settings (without any test-time augmentation and post processing). 
-- **High efficiency:** up to **51fps** ([AOTT](MODEL_ZOO.md#davis-2017-test)) on DAVIS-2017 (480p) even with **10** objects and **41fps** on YouTube-VOS (1.3x480p). AOT can process multiple objects (less than a pre-defined number, 10 is the default) as efficiently as processing a single object. This project also supports inferring any number of objects together within a video by automatic separation and aggregation.
+- **High performance:** up to **85.5%** ([R50-AOTL](MODEL_ZOO.md#youtube-vos-2018-val)) on YouTube-VOS 2018 and **82.1%** ([SwinB-AOTL](MODEL_ZOO.md#youtube-vos-2018-val)) on DAVIS-2017 Test-dev under standard settings (no test-time augmentation, no post-processing).
+- **High efficiency:** up to **51fps** ([AOTT](MODEL_ZOO.md#davis-2017-test)) on DAVIS-2017 (480p) with **10 objects** and **41fps** on YouTube-VOS (1.3×480p). Multi-object processing is as efficient as single-object — no per-object overhead.
 - **Multi-GPU training and inference**
-- **Mixed precision training and inference** 
-- **Test-time augmentation:** multi-scale and flipping augmentations are supported.
+- **Mixed precision training and inference**
+- **Test-time augmentation:** multi-scale and flipping augmentations supported.
 
 ## Requirements
    * Python3
@@ -69,57 +90,49 @@ General examples (Messi and Kobe):
      ```
 
 Optional:
-   * scikit-image (if you want to run our **Demo**, please install)
+   * scikit-image (required for the **Demo**)
 
 ## Model Zoo and Results
-Pre-trained models, benckmark scores, and pre-computed results reproduced by this project can be found in [MODEL_ZOO.md](MODEL_ZOO.md).
+Pre-trained models, benchmark scores, and pre-computed results: [MODEL_ZOO.md](MODEL_ZOO.md).
 
 ## Demo - Panoptic Propagation
-We provide a simple demo to demonstrate AOT's effectiveness. The demo will propagate more than **40** objects, including semantic regions (like sky) and instances (like person), together within a single complex scenario and predict its video panoptic segmentation.
+Propagates **40+** objects (semantic regions like sky, instances like person) within a single complex scenario and predicts video panoptic segmentation.
 
-To run the demo, download the [checkpoint](https://drive.google.com/file/d/1qJDYn3Ibpquu4ffYoQmVjg1YCbr2JQep/view?usp=sharing) of R50-AOTL into [pretrain_models](pretrain_models), and then run:
+Download the [R50-AOTL checkpoint](https://drive.google.com/file/d/1qJDYn3Ibpquu4ffYoQmVjg1YCbr2JQep/view?usp=sharing) into [pretrain_models](pretrain_models), then run:
 ```bash
 python tools/demo.py
 ```
-which will predict the given scenarios in the resolution of 1.3x480p. You can also run this demo with other AOTs ([MODEL_ZOO.md](MODEL_ZOO.md)) by setting `--model` (model type) and `--ckpt_path` (checkpoint path).
+Output resolution: 1.3×480p. Other AOT variants supported via `--model` and `--ckpt_path`.
 
-Two scenarios from [VSPW](https://www.vspwdataset.com/home) are supplied in [datasets/Demo](datasets/Demo):
+Two scenarios from [VSPW](https://www.vspwdataset.com/home) are included in [datasets/Demo](datasets/Demo):
 
-- 1001_3iEIq5HBY1s: 44 objects. 1080P.
-- 1007_YCTBBdbKSSg: 43 objects. 1080P.
-
-Results:
+- `1001_3iEIq5HBY1s`: 44 objects. 1080P.
+- `1007_YCTBBdbKSSg`: 43 objects. 1080P.
 
 <img src="source/1001_3iEIq5HBY1s.gif" width="45%"/>  <img src="source/1007_YCTBBdbKSSg.gif" width="45%"/>
 
-
 ## Getting Started
-0. Prepare a valid environment follow the [requirements](#requirements).
+0. Prepare a valid environment following the [requirements](#requirements).
 
 1. Prepare datasets:
 
-    Please follow the below instruction to prepare datasets in each corresponding folder.
-    * **Static** 
-    
-        [datasets/Static](datasets/Static): pre-training dataset with static images. Guidance can be found in [AFB-URR](https://github.com/xmlyqing00/AFB-URR), which we referred to in the implementation of the pre-training.
+    Please follow the instructions below to prepare datasets in each folder.
+    * **Static**
+
+        [datasets/Static](datasets/Static): pre-training dataset with static images. Guidance in [AFB-URR](https://github.com/xmlyqing00/AFB-URR).
     * **YouTube-VOS**
 
-        A commonly-used large-scale VOS dataset.
+        [datasets/YTB/2019](datasets/YTB/2019): version 2019, [download](https://drive.google.com/drive/folders/1XwjQ-eysmOb7JdmJAwfVOBZX-aMbHccC). `train` for training; `valid` (6fps) and `valid_all_frames` (30fps, optional) for evaluation.
 
-        [datasets/YTB/2019](datasets/YTB/2019): version 2019, download [link](https://drive.google.com/drive/folders/1XwjQ-eysmOb7JdmJAwfVOBZX-aMbHccC). `train` is required for training. `valid` (6fps) and `valid_all_frames` (30fps, optional) are used for evaluation.
-
-        [datasets/YTB/2018](datasets/YTB/2018): version 2018, download [link](https://drive.google.com/drive/folders/1L9JAl1BCtzomRJ34tKsU9tJUmF-ZMFOM). Only `valid` (6fps) and `valid_all_frames` (30fps, optional) are required for this project and used for evaluation.
+        [datasets/YTB/2018](datasets/YTB/2018): version 2018, [download](https://drive.google.com/drive/folders/1L9JAl1BCtzomRJ34tKsU9tJUmF-ZMFOM). Only `valid` (6fps) and `valid_all_frames` (30fps, optional) required.
 
     * **DAVIS**
 
-        A commonly-used small-scale VOS dataset.
-
-        [datasets/DAVIS](datasets/DAVIS): [TrainVal](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip) (480p) contains both the training and validation split. [Test-Dev](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-test-dev-480p.zip) (480p) contains the Test-dev split. The [full-resolution version](https://davischallenge.org/davis2017/code.html) is also supported for training and evaluation but not required.
-
+        [datasets/DAVIS](datasets/DAVIS): [TrainVal](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip) (480p) contains training and validation splits. [Test-Dev](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-test-dev-480p.zip) (480p) contains the test split. Full-resolution also supported but not required.
 
 2. Prepare ImageNet pre-trained encoders
 
-    Select and download below checkpoints into [pretrain_models](pretrain_models):
+    Download into [pretrain_models](pretrain_models):
 
     - [MobileNet-V2](https://download.pytorch.org/models/mobilenet_v2-b0353104.pth) (default encoder)
     - [MobileNet-V3](https://download.pytorch.org/models/mobilenet_v3_large-8738ca79.pth)
@@ -129,23 +142,29 @@ Results:
     - [ResNeSt-101](https://github.com/zhanghang1989/ResNeSt/releases/download/weights_step1/resnest101-22405ba7.pth)
     - [Swin-Base](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22k.pth)
 
-    The current default training configs are not optimized for encoders larger than ResNet-50. If you want to use larger encoders, we recommend early stopping the main-training stage at 80,000 iterations (100,000 in default) to avoid over-fitting on the seen classes of YouTube-VOS.
-
-
+    > For encoders larger than ResNet-50, we recommend early stopping the main-training stage at 80k iterations (default: 100k) to avoid overfitting on seen YouTube-VOS classes.
 
 3. Training and Evaluation
 
-    The [example script](train_eval.sh) will train AOTT with 2 stages using 4 GPUs and auto-mixed precision (`--amp`). The first stage is a pre-training stage using `Static` dataset, and the second stage is a main-training stage, which uses both `YouTube-VOS 2019 train` and `DAVIS-2017 train` for training, resulting in a model that can generalize to different domains (YouTube-VOS and DAVIS) and different frame rates (6fps, 24fps, and 30fps).
+    The [example script](train_eval.sh) trains AOTT across 2 stages on 4 GPUs with AMP (`--amp`):
+    - **Stage 1 (pre-training):** `Static` dataset
+    - **Stage 2 (main training):** `YouTube-VOS 2019 train` + `DAVIS-2017 train` — generalizes across domains and frame rates (6, 24, 30fps)
 
-    Notably, you can use only the `YouTube-VOS 2019 train` split in the second stage by changing `pre_ytb_dav` to `pre_ytb`, which leads to better YouTube-VOS performance on unseen classes. Besides, if you don't want to do the first stage, you can start the training from stage `ytb`, but the performance will drop about 1~2% absolutely.
+    Training takes ~0.6 days per stage on 4× Tesla V100.
 
-    After the training is finished (about 0.6 days for each stage with 4 Tesla V100 GPUs), the [example script](train_eval.sh) will evaluate the model on YouTube-VOS and DAVIS, and the results will be packed into Zip files. For calculating scores, please use official YouTube-VOS servers ([2018 server](https://competitions.codalab.org/competitions/19544) and [2019 server](https://competitions.codalab.org/competitions/20127)), official [DAVIS toolkit](https://github.com/davisvideochallenge/davis-2017) (for Val), and official [DAVIS server](https://competitions.codalab.org/competitions/20516#learn_the_details) (for Test-dev).
+    Use `pre_ytb` instead of `pre_ytb_dav` in Stage 2 for better YouTube-VOS performance on unseen classes. Skipping Stage 1 (`ytb` start) drops performance ~1–2% absolutely.
+
+    After training, results are packed into zip files for submission to:
+    - [YouTube-VOS 2018 server](https://competitions.codalab.org/competitions/19544)
+    - [YouTube-VOS 2019 server](https://competitions.codalab.org/competitions/20127)
+    - [DAVIS toolkit](https://github.com/davisvideochallenge/davis-2017) (Val)
+    - [DAVIS server](https://competitions.codalab.org/competitions/20516#learn_the_details) (Test-dev)
 
 ## Adding your own dataset
-Coming
+Coming soon.
 
 ## Troubleshooting
-Waiting
+Coming soon.
 
 ## TODO
 - [ ] Code documentation
