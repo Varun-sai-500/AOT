@@ -59,7 +59,7 @@ General examples (Messi and Kobe):
    * Python >= 3.10
    * pytorch >= 1.7.0
    * torchvision >= 0.24.0
-   * opencv-python
+   * opencv-python-headless>=4.10.0
    * Pillow >= 11.0.0
    * Pytorch Correlation. Recommend to install from [source](https://github.com/ClementPinard/Pytorch-Correlation-extension):
      ```bash
@@ -70,7 +70,7 @@ General examples (Messi and Kobe):
      ```
 
 Optional:
-   * scikit-image (if you want to run our **Demo**, please install)
+   * scikit-image==0.25.2 (if you want to run our **Demo**, please install)
 
 ## Installation
 

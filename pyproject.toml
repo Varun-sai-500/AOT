@@ -17,7 +17,7 @@ dependencies = [
 
 [project.optional-dependencies]
 demo = [
-    "scikit-image",
+    "scikit-image==0.25.2",
 ]
 
 [tool.setuptools.packages.find]

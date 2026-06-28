@@ -5,7 +5,6 @@ WORKDIR /workspace
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
-    python3-venv \
     git \
     ffmpeg \
     libgl1 \
@@ -15,7 +14,8 @@ RUN apt-get update && apt-get install -y \
 
 COPY . .
 
-RUN python3 -m pip install --upgrade pip setuptools wheel
-RUN python3 -m pip install -e .
+RUN python3 -m pip install --no-cache-dir --upgrade pip setuptools wheel
+RUN python3 -m pip install --no-cache-dir -e .
+RUN python3 -m pip install --no-cache-dir -e ".[demo]"
 
 CMD ["/bin/bash"]
