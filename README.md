@@ -52,6 +52,20 @@ FAn uses DeAOT to track and follow arbitrary objects specified by text, image, o
 
 ---
 
+
+## Papers
+
+A four-year research lineage across NeurIPS, IJCAI, and IEEE TPAMI:
+
+| Year | Paper | Venue | Branch |
+|------|-------|-------|--------|
+| 2021 | [**AOT**: Associating Objects with Transformers for Video Object Segmentation](https://arxiv.org/abs/2106.02638) [[OpenReview](https://openreview.net/forum?id=hl3v8io3ZYt)] | NeurIPS 2021 | `main` |
+| 2022 | [**DeAOT**: Decoupling Features in Hierarchical Propagation for VOS](https://arxiv.org/pdf/2210.09782.pdf) [[OpenReview](https://openreview.net/forum?id=DgM7-7eMkq0)] | NeurIPS 2022 **Spotlight** ⭐ | `main` |
+| 2023 | [**PAOT**: Video Object Segmentation in Panoptic Wild Scenes](https://arxiv.org/abs/2305.04470) | IJCAI 2023 | [`paot`](https://github.com/yoxu515/aot-benchmark/tree/paot) |
+| 2024 | [**AOST**: Scalable Video Object Segmentation with Identification Mechanism](https://arxiv.org/abs/2203.11442) | IEEE TPAMI 2024 | [`paot`](https://github.com/yoxu515/aot-benchmark/tree/paot) |
+
+> NeurIPS Spotlight is awarded to the top ~5% of accepted submissions. IEEE TPAMI is the field's highest-impact journal, with a multi-year, multi-round review standard.
+
 ## Competition Record
 
 Six first-place finishes across three major venues:
@@ -69,18 +83,6 @@ Six first-place finishes across three major venues:
 
 ---
 
-## Papers
-
-A four-year research lineage across NeurIPS, IJCAI, and IEEE TPAMI:
-
-| Year | Paper | Venue | Branch |
-|------|-------|-------|--------|
-| 2021 | [**AOT**: Associating Objects with Transformers for Video Object Segmentation](https://arxiv.org/abs/2106.02638) [[OpenReview](https://openreview.net/forum?id=hl3v8io3ZYt)] | NeurIPS 2021 | `main` |
-| 2022 | [**DeAOT**: Decoupling Features in Hierarchical Propagation for VOS](https://arxiv.org/pdf/2210.09782.pdf) [[OpenReview](https://openreview.net/forum?id=DgM7-7eMkq0)] | NeurIPS 2022 **Spotlight** ⭐ | `main` |
-| 2023 | [**PAOT**: Video Object Segmentation in Panoptic Wild Scenes](https://arxiv.org/abs/2305.04470) | IJCAI 2023 | [`paot`](https://github.com/yoxu515/aot-benchmark/tree/paot) |
-| 2024 | [**AOST**: Scalable Video Object Segmentation with Identification Mechanism](https://arxiv.org/abs/2203.11442) | IEEE TPAMI 2024 | [`paot`](https://github.com/yoxu515/aot-benchmark/tree/paot) |
-
-> NeurIPS Spotlight is awarded to the top ~5% of accepted submissions. IEEE TPAMI is the field's highest-impact journal, with a multi-year, multi-round review standard.
 
 ## Intro
 A modular reference PyTorch implementation of the AOT series frameworks:
