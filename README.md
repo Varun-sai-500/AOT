@@ -31,7 +31,7 @@
 
 
 ## News
-- `2024/03`: **AOST** - [AOST](https://arxiv.org/abs/2203.11442), the journal extension of AOT, has been accepted by **IEEE TPAMI 2024** — the field's highest-impact journal. AOST is the first scalable VOS framework supporting run-time speed-accuracy trade-offs, from real-time efficiency to SOTA performance.
+- `2024/03`: **AOST** - [AOST](https://arxiv.org/abs/2203.11442), the journal extension of AOT, has been accepted by **IEEE TPAMI 2024**. AOST is the first scalable VOS framework supporting run-time speed-accuracy trade-offs, from real-time efficiency to SOTA performance.
 - `2023/07`: **Pyramid/Panoptic AOT** - The code of PAOT has been released in the [paot](https://github.com/yoxu515/aot-benchmark/tree/paot) branch. We propose a benchmark [**VIPOSeg**](https://github.com/yoxu515/VIPOSeg-Benchmark) for panoptic VOS, and PAOT is designed to tackle the challenges in panoptic VOS achieving SOTA performance. PAOT consists of a multi-scale LSTT architecture (same as MS-AOT in VOT2022) and panoptic ID banks for thing and stuff. See the [paper](https://arxiv.org/abs/2305.04470) for details. Published at **IJCAI 2023**.
 - `2023/07`: **WINNER** - DeAOT-based Tracker ranked **1st** in the [**VOTS 2023**](https://www.votchallenge.net/vots2023/) challenge at **ICCV 2023** ([leaderboard](https://eu.aihub.ml/competitions/201#results)). Our [DMAOT](https://eu.aihub.ml/my/competition/submission/1139/detailed_results/) improves DeAOT by storing object-wise long-term memories instead of frame-wise long-term memories, eliminating memory growth in long sequences and improving multi-object handling.
 - `2023/06`: **WINNER** - DeAOT-based Tracker ranked **1st** in **two tracks** of the [**EPIC-Kitchens**](https://epic-kitchens.github.io/2023) challenges at **CVPR 2023** ([leaderboard](http://epic-kitchens.github.io/2023)). MS-DeAOT wins Semi-Supervised Video Object Segmentation (segmentation-based tracking) [[Report](https://arxiv.org/pdf/2307.02010)] and TREK-150 Object Tracking (BBox-based tracking) [[Report](https://arxiv.org/pdf/2307.02508)].
@@ -44,9 +44,7 @@ AOT/DeAOT has been adopted as core tracking infrastructure in published robotics
 
 | Project | Institutions | Venue | Details |
 |---------|-------------|-------|---------|
-| [Follow Anything (FAn)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10436161) | MIT CSAIL · Harvard SEAS · Project CETI | IEEE RA-L | Open-vocabulary real-time drone tracking system using DeAOT as the video object tracking backbone, deployed on a physical micro aerial vehicle (MAV). Authors include Daniela Rus (MIT CSAIL Director) and Robert J. Wood (Harvard SEAS). |
-
-FAn uses DeAOT to track and follow arbitrary objects specified by text, image, or click — deployed in a live control loop on a drone at 6–20 fps on a commodity laptop GPU. This is not a benchmark citation; it is production use in a real robotic system.
+| [Follow Anything (FAn)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10436161) | MIT CSAIL · Harvard SEAS · Project CETI | IEEE RA-L | Open-vocabulary real-time drone tracking system. |
 
 ---
 
@@ -85,7 +83,7 @@ A modular reference PyTorch implementation of the AOT series frameworks:
 - **DeAOT**: Decoupling Features in Hierarchical Propagation for Video Object Segmentation (NeurIPS 2022, Spotlight)
 <img src="source/overview_deaot.png" width="90%"/>
 
-- **AOT**: Associating Objects with Transformers for Video Object Segmentation (NeurIPS 2021, Score 8/8/7/8) 
+- **AOT**: Associating Objects with Transformers for Video Object Segmentation (NeurIPS 2021, Score 8/8/7/8)
 <img src="source/overview.png" width="90%"/>
 
 For the `paot` branch: **PAOT** (IJCAI 2023) and **AOST** (IEEE TPAMI 2024) are available at [paot](https://github.com/yoxu515/aot-benchmark/tree/paot).
