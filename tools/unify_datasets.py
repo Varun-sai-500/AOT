@@ -18,7 +18,7 @@ from utils.image import _palette as MASK_PALETTE
 
 def get_args():
     parser = argparse.ArgumentParser(description='Unify Pretrain Dataset')
-    parser.add_argument('--dst', type=str, default='/Ship01/Dataset/VOS/pretrain')
+    parser.add_argument('--dst', type=str, default='./datasets/Static')
     parser.add_argument('--worker', type=int, default=10, help='Threads number.')
     parser.add_argument('--name', type=str, required=True)
     parser.add_argument('--src', type=str, required=True)
