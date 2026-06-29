@@ -82,10 +82,10 @@ Six first-place finishes across three major venues:
 
 ## Intro
 A modular reference PyTorch implementation of the AOT series frameworks:
-- **DeAOT**: Decoupling Features in Hierarchical Propagation for Video Object Segmentation (NeurIPS 2022, Spotlight) [[OpenReview](https://openreview.net/forum?id=DgM7-7eMkq0)][[PDF](https://arxiv.org/pdf/2210.09782.pdf)]
+- **DeAOT**: Decoupling Features in Hierarchical Propagation for Video Object Segmentation (NeurIPS 2022, Spotlight)
 <img src="source/overview_deaot.png" width="90%"/>
 
-- **AOT**: Associating Objects with Transformers for Video Object Segmentation (NeurIPS 2021, Score 8/8/7/8) [[OpenReview](https://openreview.net/forum?id=hl3v8io3ZYt)][[PDF](https://arxiv.org/abs/2106.02638)]
+- **AOT**: Associating Objects with Transformers for Video Object Segmentation (NeurIPS 2021, Score 8/8/7/8) 
 <img src="source/overview.png" width="90%"/>
 
 For the `paot` branch: **PAOT** (IJCAI 2023) and **AOST** (IEEE TPAMI 2024) are available at [paot](https://github.com/yoxu515/aot-benchmark/tree/paot).
