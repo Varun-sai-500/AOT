@@ -144,15 +144,87 @@ Results:
 
     After the training is finished (about 0.6 days for each stage with 4 Tesla V100 GPUs), the [example script](train_eval.sh) will evaluate the model on YouTube-VOS and DAVIS, and the results will be packed into Zip files. For calculating scores, please use official YouTube-VOS servers ([2018 server](https://competitions.codalab.org/competitions/19544) and [2019 server](https://competitions.codalab.org/competitions/20127)), official [DAVIS toolkit](https://github.com/davisvideochallenge/davis-2017) (for Val), and official [DAVIS server](https://competitions.codalab.org/competitions/20516#learn_the_details) (for Test-dev).
 
-## Adding your own dataset
-Coming
+## Adding Your Own Dataset
+
+The dataset conversion utility can convert custom segmentation datasets into the unified pre-training format expected by AOT.
+
+### Expected Directory Structure
+
+By default, the script expects the following layout:
+
+```text
+/path/to/raw/
+├── images/
+│   ├── 0001.jpg
+│   ├── 0002.jpg
+│   └── ...
+└── masks/
+    ├── 0001.png
+    ├── 0002.png
+    └── ...
+```
+
+Image and mask filenames must share the same filename stem (e.g. `0001.jpg` ↔ `0001.png`).
+
+If your dataset uses different folder names, specify them with `--img_dir` and `--mask_dir`.
+
+### Supported Mask Formats
+
+| Format | Description |
+|--------|-------------|
+| `binary` | Binary segmentation masks where background = `0` and foreground = `255`. Converted to object IDs (`0` = background, `1` = foreground). |
+| `rgb_palette` | Multi-object masks where each object is represented by a unique RGB color. Colors are automatically mapped to sequential object IDs. |
+| `index` | Masks already encoded as object IDs (`0` = background, `1,2,...` = objects). These are copied without modification. |
+
+### Usage
+
+```bash
+python3 unify_pretrain_dataset.py \
+    --name MyDataset \
+    --src /path/to/raw \
+    --dst /path/to/unified \
+    --custom \
+    --img_dir images \
+    --mask_dir masks \
+    --img_ext .jpg \
+    --mask_ext .png \
+    --mask_format binary
+```
+
+### Arguments
+
+| Argument | Description |
+|----------|-------------|
+| `--name` | Name of the converted dataset. |
+| `--src` | Root directory of the raw dataset. |
+| `--dst` | Output directory for the unified dataset. |
+| `--custom` | Enable custom dataset conversion mode. |
+| `--img_dir` | Image directory relative to `--src` (or an absolute path). |
+| `--mask_dir` | Mask directory relative to `--src` (or an absolute path). |
+| `--img_ext` | Image file extension (e.g. `.jpg`, `.png`). |
+| `--mask_ext` | Mask file extension (typically `.png`). |
+| `--mask_format` | Mask format: `binary`, `rgb_palette`, or `index`. |
+
+### Output Structure
+
+The converted dataset will be written as:
+
+```text
+<dst>/
+├── JPEGImages/
+│   └── MyDataset/
+└── Annotations/
+    └── MyDataset/
+```
+
+The output is directly compatible with the AOT pre-training pipeline.
 
 ## Troubleshooting
 Waiting
 
 ## TODO
 - [ ] Code documentation
-- [ ] Adding your own dataset
+- [x] Adding your own dataset
 - [ ] Results with test-time augmentations in Model Zoo
 - [ ] Support gradient accumulation
 - [x] Demo tool
